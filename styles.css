@@ -1,0 +1,150 @@
+/* Import Brela Regular font */
+@font-face {
+  font-family: 'Brela Regular';
+  src: url('https://fonts.cdnfonts.com/s/59919/Brela-Regular.woff') format('woff');
+}
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Brela Regular';
+  color: #333;
+  background-color: #f5f9fd;
+}
+
+/* Landing Page */
+.landing-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 150, 136, 0.6), rgba(0, 150, 136, 0.6)), url('https://images.unsplash.com/photo-1583344645033-1058c5c9b3c8');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.landing-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  max-width: 600px;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.landing-content p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.button {
+  padding: 12px 30px;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+  background-color: #388e3c;
+}
+
+/* Main Page */
+.main-page {
+  padding: 20px;
+  animation: fadeIn 1s ease;
+  background: linear-gradient(to bottom right, #e0f7fa, #a7ffeb);
+  min-height: 100vh;
+}
+
+.main-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.main-header h1 {
+  font-size: 2.5em;
+  color: #004d40;
+}
+
+/* Question Container */
+.question-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.question {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 800px;
+  padding: 25px 20px; 
+  margin: 15px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-size: 1.1em;
+}
+
+.question label {
+  font-size: 1.2em;
+  color: #004d40;
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+/* Result Container */
+#result-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 20px;
+  margin-top: 20px;
+}
+
+.result, .advice {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 25px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 15px;
+  text-align: center;
+  font-size: 1.2em;
+  color: #004d40;
+  font-weight: bold;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

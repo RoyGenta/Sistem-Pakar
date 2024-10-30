@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sistem Pakar Perikanan</title>
+</head>
+<body>
+    <!-- Landing Page -->
+    <div id="landing-page" class="landing-page">
+        <div class="overlay"></div>
+        <div class="landing-content">
+            <h1>Sistem Pakar Pemeliharaan Ikan Mas Koki</h1>
+            <p>Mari jaga kualitas lingkungan terbaik untuk ikan mas koki mu!</p>
+            <button id="enter-button" class="button">Mulai Sekarang</button>
+        </div>
+    </div>
+
+    <!-- Main Page -->
+    <div id="main-page" class="main-page" style="display: none;">
+        <header class="main-header">
+            <h1>Analisis Lingkungan Perikanan</h1>
+        </header>
+        <div class="question-container">
+            <div id="questions"></div>
+            <button id="calculate-button" class="button">Hitung CF</button>
+        </div>
+        <div id="result" class="result"></div>
+        <div id="advice" class="advice"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
